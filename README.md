@@ -1,83 +1,141 @@
+<div align="center">
+
 # ✨ Vision Forge
 
-**Imagine Anything.** Vision Forge is an AI-powered image generation platform that transforms simple text prompts into stunning 8K visuals — instantly.
+**Imagine Anything.**
 
-🔗 **Live Demo:** [https://visions-forge.netlify.app](https://visions-forge.netlify.app)
+An AI-powered image generation platform that transforms simple text prompts into stunning 8K visuals — instantly.
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Try_Now-9D4EDD?style=for-the-badge)](https://visions-forge.netlify.app)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Netlify](https://img.shields.io/badge/Deployed_on-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)
+
+</div>
+
+---
+
+## 📖 Table of Contents
+
+- [Overview](#️-overview)
+- [Live Demo](#-live-demo)
+- [Features](#-features)
+- [AI Engines](#-ai-engines)
+- [Tech Stack](#️-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#️-getting-started)
 
 ---
 
 ## 🖼️ Overview
 
-Vision Forge lets users describe their vision in plain language and generate ultra-high-definition, crystal-clear images using state-of-the-art AI diffusion models. With curated style presets, multiple AI engines, and a personal creations gallery, it turns imagination into visual reality in seconds.
+**Vision Forge** lets users describe their vision in plain language and generate ultra-high-definition, crystal-clear images using state-of-the-art AI diffusion models. With curated style presets, multiple AI engines, and a personal creations gallery, it turns imagination into visual reality in seconds.
+
+---
+
+## 🌐 Live Demo
+
+<div align="center">
+
+### 👉 [**Launch Vision Forge**](https://visions-forge.netlify.app)
+
+*Runs live in your browser — no installation required.*
+
+</div>
 
 ---
 
 ## 🚀 Features
 
-- **Instant Inspiration Prompts** – One-click starter prompts (Cosmic Astronaut, Neon Cyberpunk, Enchanted Shrine, Luxury Watch, and more)
-- **Multiple AI Engines**
-  - ⚡ FLUX.1 Ultra – 28-step studio fidelity (Recommended)
-  - 🚀 FLUX.1 Schnell – High speed, clean textures
-  - 🎨 SDXL Studio – Refined 40-step diffusion
-- **Style Presets** – Cinematic, Anime, Product Photo, Oil Painting, Cyberpunk, Watercolor, Pixel Art, Photorealistic
-- **Prompt Enhancement** – "Enhance Quality" for AI-optimized prompt refinement
+<table>
+<tr>
+<td valign="top" width="50%">
+
+### 🎨 Creation Tools
+- **Instant Inspiration Prompts** — one-click starters (Cosmic Astronaut, Neon Cyberpunk, Enchanted Shrine, Luxury Watch, and more)
+- **Style Presets** — Cinematic, Anime, Product Photo, Oil Painting, Cyberpunk, Watercolor, Pixel Art, Photorealistic
+- **Prompt Enhancement** — "Enhance Quality" for AI-optimized prompt refinement
 - **Custom Aspect Ratio & Canvas Dimensions**
-- **Creations Gallery** – View, revisit, and manage previously generated images in full resolution
-- **Ultra-HD Image Generation** – One-click generation of high-fidelity outputs
+
+</td>
+<td valign="top" width="50%">
+
+### 🖼️ Output & Management
+- **Multiple AI Engines** — choose the model that fits your speed/fidelity needs
+- **Ultra-HD Image Generation** — one-click generation of high-fidelity outputs
+- **Creations Gallery** — view, revisit, and manage previously generated images in full resolution
+
+</td>
+</tr>
+</table>
+
+---
+
+## ⚡ AI Engines
+
+| Engine | Description |
+|---|---|
+| **FLUX.1 Ultra** ⭐ | 28-step studio fidelity — *recommended* |
+| **FLUX.1 Schnell** | High speed, clean textures |
+| **SDXL Studio** | Refined 40-step diffusion |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React (Vite), Tailwind CSS
-- **Backend:** Node.js / Express
-- **Database:** Local JSON-based job store
-- **Deployment:** Netlify
+| Layer | Technology |
+|---|---|
+| **Frontend** | React (Vite), Tailwind CSS |
+| **Backend** | Node.js / Express |
+| **Database** | Local JSON-based job store |
+| **Deployment** | Netlify |
 
 ---
 
 ## 📂 Project Structure
 
-```
+```bash
 frontend/
 ├── src/
-│   ├── api/            # API client
-│   ├── components/     # UI components (Logo, PromptInput, StylePresets, ImageResult, VideoResult, JobStatus)
-│   ├── hooks/           # Custom hooks (useJobPoller)
-│   ├── styles/          # Global styles
+│   ├── api/               # API client
+│   ├── components/        # UI components (Logo, PromptInput, StylePresets, ImageResult, VideoResult, JobStatus)
+│   ├── hooks/              # Custom hooks (useJobPoller)
+│   ├── styles/             # Global styles
 │   ├── App.jsx
 │   └── main.jsx
 ├── public/
 └── index.html
 
-server/                 # Backend API server
-uploads/                 # Generated media storage
+server/                     # Backend API server
+uploads/                    # Generated media storage
 ```
 
 ---
 
 ## ⚙️ Getting Started
 
-1. Clone the repository
-2. Install dependencies
-   ```bash
-   npm install
-   ```
-3. Set up environment variables (see `.env.example`)
-4. Run the development server
-   ```bash
-   npm run dev
-   ```
-5. Visit `http://localhost:3000`
+**1. Clone the repository**
+```bash
+git clone https://github.com/your-username/vision-forge.git
+cd vision-forge
+```
 
----
+**2. Install dependencies**
+```bash
+npm install
+```
 
-## 🌐 Live Application
+**3. Set up environment variables**
 
-Try it now: **[visions-forge.netlify.app](https://visions-forge.netlify.app)**
+See `.env.example` for required variables.
 
----
+**4. Run the development server**
+```bash
+npm run dev
+```
 
-## 📄 License
+**5. Open the app**
 
-This project is open for personal and educational use. Please credit appropriately if reused.
+Visit [http://localhost:3000](http://localhost:3000) ✨
